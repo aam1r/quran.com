@@ -134,3 +134,29 @@
 .word_font{
   line-height: 150%;
 }
+
+.line{
+  line-height: 150%;
+  display: block;
+  width: 800px;
+  margin: 0px auto;
+
+  @media (max-width: $screen-xs-max) {
+    font-size: 5vw;
+    font-size: 45%;
+    width: 370px;
+  }
+
+  @media (min-width: $screen-xs-max) and (max-width: $screen-sm-max) {
+    font-size: 70%;
+    width: 500px;
+  }
+
+  @media (min-width: $screen-sm-max) and (max-width: $screen-md-max) {
+    font-size: 80%;
+    width: 700px;
+  }
+  @media (min-width: $screen-md-max) and (max-width: 1400px) {
+    font-size: 100%;
+  }
+}

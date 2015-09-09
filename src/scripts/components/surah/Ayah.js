@@ -79,14 +79,6 @@ class Ayah extends React.Component {
       }
     });
 
-    if (this.props.readingMode) {
-      return (
-        <span>
-          {text}
-        </span>
-      );
-    }
-
     return (
       <h1 className="word-font text-right">
         {text}
@@ -128,11 +120,7 @@ class Ayah extends React.Component {
   }
 
   render() {
-    debug(`COMPONENT-AYAH RENDERED ${this.props.ayah.ayah}`);
-
-    if (this.props.readingMode) {
-      return this.text();
-    }
+    debug(`COMPONENT-AYAH RENDERED ${this.props.ayah.ayah}`)
 
     return (
       <div className="row ayah">
