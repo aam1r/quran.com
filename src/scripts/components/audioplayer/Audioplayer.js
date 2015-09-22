@@ -66,8 +66,8 @@ class Audioplayer extends React.Component {
   }
 
   // TODO: Revisit this later.
-  shouldComponentUpdate(nextProps, nextState) {
-  }
+  // shouldComponentUpdate(nextProps, nextState) {
+  // }
 
   componentWillUnmount() {
     this.pause();
